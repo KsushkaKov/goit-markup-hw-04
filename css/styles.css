@@ -95,8 +95,7 @@ h6 {
 .site-nav .link,
 .site-nav .link-acent,
 .auth-nav .link-email,
-.auth-nav .link-number {
-  padding: 32px 0;
+.auth-nav .link-number  { padding: 32px 0;
 }
 
 .adress-company:hover,
@@ -167,7 +166,7 @@ ul {
 }
 
 .email-icon {
-  margin-top: 34px;
+  margin-top: 32px;
   margin-right: 10px;
   width: 16px;
   height: 12px;
@@ -276,11 +275,11 @@ ul {
   margin: 16px auto;
 }
 .list-clients-icon{
-fill: var(--icon-color);
+ fill: var(--icon-color);
 }
 
 .list-clients-icon:hover{
-fill: var(--acent-color);
+ fill: var(--acent-color);
 }
 
 .features-icon {
@@ -443,7 +442,6 @@ address.footer-adress {
 .footer-join{
   width: 206px;
   margin-top: 12px;
-  margin-bottom: 100px;
 }
 
 .footer-part{
@@ -460,7 +458,7 @@ address.footer-adress {
   color: var(--white-color);
 }
 
-.footer-join-list{
+.footer-join-icon{
   display: flex;
   gap: 10px;
 }
@@ -481,6 +479,7 @@ address.footer-adress {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  display: block;
 }
 
 .section-button {
