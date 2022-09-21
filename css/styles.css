@@ -68,6 +68,12 @@ h6 {
   font-family: "Raleway";
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .main-header {
   border: 1px var(--horizontal-line);
   border-style: hidden hidden solid hidden;
@@ -92,67 +98,48 @@ h6 {
   margin-right: 50px;
 }
 
-.site-nav .link,
-.site-nav .link-acent,
-.auth-nav .link-email,
-.auth-nav .link-number  { padding: 32px 0;
+.nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
 }
 
-.adress-company:hover,
-.adress-company:focus,
-.mailto:hover,
-.mailto:focus,
-.link-acent,
-.link-email:focus,
-.link-email:hover,
-.link-number:focus,
-.link-number:hover,
-.page-logo:focus,
-.page-logo:hover,
-.page-logo-footer:hover,
-.page-logo-footer:focus,
+.nav-link:hover,
+.nav-link:focus,
 .page-logo-part:hover,
 .page-logo-part:focus,
 .page-logo-part-footer:hover,
 .page-logo-part-footer:focus,
-.site-nav .link:hover,
-.site-nav .link:focus,
-.tel:hover,
-.tel:focus {
+.adress-company:hover,
+.adress-company:focus,
+.footer-contact:hover,
+.footer-contact:focus {
   color: var(--acent-color);
 }
 
-.page-logo,
-.page-logo-part,
-.page-logo-footer,
-.link-acent,
-.link,
-.link-email,
-.link-number,
-.mailto,
-.tel,
-.adress-company,
-.portfolio-link {
-  text-decoration: none;
+.link.link-acent {
+  color: var(--acent-color);
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.link {
-  color: var(--main-color-text);
-}
-
-.link,
-.link-acent,
-.link-email,
-.link-number {
+.contact-link {
+  padding: 32px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--acent-color);
+}
+
+.link {
+  text-decoration: none;
 }
 
 .link-number,
@@ -166,26 +153,15 @@ ul {
 }
 
 .email-icon {
-  margin-top: 32px;
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: var(--secondary-color);
-  cursor: pointer;
 }
 
 .phone-icon {
-  margin-top: 32px;
   margin-right: 10px;
   width: 10px;
   height: 16px;
-  fill: var(--secondary-color);
-  cursor: pointer;
-}
-
-.email-icon:hover,
-.phone-icon:hover {
-  fill: var(--acent-color);
 }
 
 .hero {
@@ -264,7 +240,7 @@ ul {
   border-radius: 4px;
 }
 
-.clients-list-icon:hover{
+.clients-list-icon:hover {
   border: 1px solid var(--acent-color);
 }
 
@@ -274,12 +250,12 @@ ul {
   display: block;
   margin: 16px auto;
 }
-.list-clients-icon{
- fill: var(--icon-color);
+.list-clients-icon {
+  fill: var(--icon-color);
 }
 
-.list-clients-icon:hover{
- fill: var(--acent-color);
+.list-clients-icon:hover {
+  fill: var(--acent-color);
 }
 
 .features-icon {
@@ -420,8 +396,7 @@ address.footer-adress {
 }
 
 .adress-company,
-.mailto,
-.tel {
+.footer-contact {
   line-height: 1.71;
   font-style: normal;
 }
@@ -430,21 +405,16 @@ address.footer-adress {
   color: var(--white-color);
 }
 
-.mailto,
-.tel {
+.footer-contact {
   color: var(--secondary-white);
 }
 
-.footer-main{
+.footer-main {
   display: flex;
+  align-items: baseline;
 }
 
-.footer-join{
-  width: 206px;
-  margin-top: 12px;
-}
-
-.footer-part{
+.footer-part {
   margin-right: 70px;
 }
 
@@ -458,14 +428,14 @@ address.footer-adress {
   color: var(--white-color);
 }
 
-.footer-join-icon{
+.footer-join-icon {
   display: flex;
   gap: 10px;
 }
 
 .list-footer-icon {
   padding: 12px;
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
   border-radius: 50%;
 }
